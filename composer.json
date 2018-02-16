@@ -32,7 +32,7 @@
         }
     ],
     "require": {
-        "yiisoft/yii2": "~2.0.6",
+        "yiisoft/yii2": "2.1.x-dev",
         "bower-asset/bootstrap": "3.3.* | 3.2.* | 3.1.*"
     },
     "repositories": [
@@ -45,6 +45,9 @@
         "psr-4": {
             "yii\\bootstrap\\": "src"
         }
+    },
+    "autoload-dev": {
+        "psr-4": {"yiiunit\\bootstrap\\": "tests/"}
     },
     "extra": {
         "branch-alias": {

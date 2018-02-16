@@ -105,21 +105,21 @@ return [
         'assetManager' => [
             // override bundles to use CDN :
             'bundles' => [
-                'yii\bootstrap\BootstrapAsset' => [
+                yii\bootstrap\BootstrapAsset::class => [
                     'sourcePath' => null,
                     'baseUrl' => 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7',
                     'css' => [
                         'css/bootstrap.min.css'
                     ],
                 ],
-                'yii\bootstrap\BootstrapPluginAsset' => [
+                yii\bootstrap\BootstrapPluginAsset::class => [
                     'sourcePath' => null,
                     'baseUrl' => 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7',
                     'js' => [
                         'js/bootstrap.min.js'
                     ],
                 ],
-                'yii\bootstrap\BootstrapThemeAsset' => [
+                yii\bootstrap\BootstrapThemeAsset::class => [
                     'sourcePath' => null,
                     'baseUrl' => 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7',
                     'css' => [
@@ -159,23 +159,23 @@ return [
         'assetManager' => [
             // setup asset converter for *.less files :
             'converter' => [
-                'class' => 'yii\web\AssetConverter',
+                'class' => yii\web\AssetConverter::class,
                 'commands' => [
                     'less' => ['css', 'lessc {from} {to} --no-color'],
                 ],
             ],
             // override bundles to use local project files :
             'bundles' => [
-                'yii\bootstrap\BootstrapAsset' => [
+                yii\bootstrap\BootstrapAsset::class => [
                     'sourcePath' => '@app/assets/source/bootstrap',
                     'css' => [
                         'css/bootstrap.less'
                     ],
                 ],
-                'yii\bootstrap\BootstrapPluginAsset' => [
+                yii\bootstrap\BootstrapPluginAsset::class => [
                     'sourcePath' => '@app/assets/source/bootstrap',
                 ],
-                'yii\bootstrap\BootstrapThemeAsset' => [
+                yii\bootstrap\BootstrapThemeAsset::class => [
                     'sourcePath' => '@app/assets/source/bootstrap',
                 ],
             ],
@@ -213,23 +213,23 @@ return [
         'assetManager' => [
             // setup asset converter for *.sass files :
             'converter' => [
-                'class' => 'yii\web\AssetConverter',
+                'class' => yii\web\AssetConverter::class,
                 'commands' => [
                     'scss' => ['css', 'sass {from} {to} --sourcemap']
                 ],
             ],
             // override bundles to use local project files :
             'bundles' => [
-                'yii\bootstrap\BootstrapAsset' => [
+                yii\bootstrap\BootstrapAsset::class => [
                     'sourcePath' => '@app/assets/source/bootstrap',
                     'css' => [
                         'css/bootstrap.scss'
                     ],
                 ],
-                'yii\bootstrap\BootstrapPluginAsset' => [
+                yii\bootstrap\BootstrapPluginAsset::class => [
                     'sourcePath' => '@app/assets/source/bootstrap',
                 ],
-                'yii\bootstrap\BootstrapThemeAsset' => [
+                yii\bootstrap\BootstrapThemeAsset::class => [
                     'sourcePath' => '@app/assets/source/bootstrap',
                 ],
             ],

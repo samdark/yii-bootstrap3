@@ -9,7 +9,7 @@ For this you need to configure the `assetManager` [application component](https:
 ```php
     'assetManager' => [
         'bundles' => [
-            'yii\bootstrap\BootstrapAsset' => [
+            yii\bootstrap\BootstrapAsset::class => [
                 'css' => [],
             ]
         ]

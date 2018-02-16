@@ -1,13 +1,13 @@
 <?php
 
-namespace yiiunit\extensions\bootstrap\data;
+namespace yiiunit\bootstrap\data;
 
 use yii\bootstrap\ActiveField;
 
 /**
  * A customized extension from ActiveField
  *
- * @see \yiiunit\extensions\bootstrap\ActiveFieldTest::testHorizontalCssClassesOverride()
+ * @see \yiiunit\bootstrap\ActiveFieldTest::testHorizontalCssClassesOverride()
  *
  * @author Michael Härtl <haertl.mike@gmail.com>
  */

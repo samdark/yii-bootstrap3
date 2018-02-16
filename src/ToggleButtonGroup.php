@@ -16,7 +16,7 @@ use yii\base\InvalidConfigException;
  * method, for example like this:
  *
  * ```php
- * <?= $form->field($model, 'item_id')->widget(\yii\bootstrap\ToggleButtonGroup::classname(), [
+ * <?= $form->field($model, 'item_id')->widget(\yii\bootstrap\ToggleButtonGroup::class, [
  *     // configure additional widget properties here
  * ]) ?>
  * ```

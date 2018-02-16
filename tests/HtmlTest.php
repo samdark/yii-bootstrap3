@@ -1,6 +1,6 @@
 <?php
 
-namespace yiiunit\extensions\bootstrap;
+namespace yiiunit\bootstrap;
 
 use yii\base\DynamicModel;
 use yii\bootstrap\Html;

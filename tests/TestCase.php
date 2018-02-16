@@ -1,6 +1,6 @@
 <?php
 
-namespace yiiunit\extensions\bootstrap;
+namespace yiiunit\bootstrap;
 
 use yii\di\Container;
 use yii\helpers\ArrayHelper;
@@ -31,7 +31,7 @@ abstract class TestCase extends \PHPUnit\Framework\TestCase
      * @param array $config
      * @param string $appClass
      */
-    protected function mockWebApplication($config = [], $appClass = '\yii\web\Application')
+    protected function mockWebApplication($config = [], $appClass = \yii\web\Application::class)
     {
         new $appClass(ArrayHelper::merge([
             'id' => 'testapp',

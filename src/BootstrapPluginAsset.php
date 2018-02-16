@@ -22,7 +22,7 @@ class BootstrapPluginAsset extends AssetBundle
         'js/bootstrap.js',
     ];
     public $depends = [
-        'yii\web\JqueryAsset',
-        'yii\bootstrap\BootstrapAsset',
+        \yii\jquery\JqueryAsset::class,
+        BootstrapAsset::class,
     ];
 }

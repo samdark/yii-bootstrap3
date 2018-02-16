@@ -1,5 +1,6 @@
 <?php
-namespace yiiunit\extensions\bootstrap;
+
+namespace yiiunit\bootstrap;
 
 use yii\base\Action;
 use yii\base\Module;
