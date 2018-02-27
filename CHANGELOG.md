@@ -1,10 +1,11 @@
 Yii Framework 2 bootstrap extension Change Log
 ==============================================
 
-2.0.9 under development
+2.2.0 under development
 -----------------------
 
-- no changes in this release.
+- Chg: Required Yii framework version has been raised to '2.1.0' (klimov-paul)
+- Chg: Assets source has been changed from Bower to NPM, e.g to "npm-asset/bootstrap" repository (klimov-paul)
 
 
 2.0.8 February 16, 2018
