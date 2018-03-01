@@ -157,7 +157,7 @@ return [
         'assetManager' => [
             // setup asset converter for *.less files :
             'converter' => [
-                'class' => yii\web\AssetConverter::class,
+                '__class' => yii\web\AssetConverter::class,
                 'commands' => [
                     'less' => ['css', 'lessc {from} {to} --no-color'],
                 ],
@@ -211,7 +211,7 @@ return [
         'assetManager' => [
             // setup asset converter for *.sass files :
             'converter' => [
-                'class' => yii\web\AssetConverter::class,
+                '__class' => yii\web\AssetConverter::class,
                 'commands' => [
                     'scss' => ['css', 'sass {from} {to} --sourcemap']
                 ],

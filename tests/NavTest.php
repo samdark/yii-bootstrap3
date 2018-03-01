@@ -19,13 +19,13 @@ class NavTest extends TestCase
         $this->mockWebApplication([
             'components' => [
                 'request' => [
-                    'class' => 'yii\web\Request',
+                    '__class' => \yii\web\Request::class,
                     'scriptUrl' => '/base/index.php',
                     'hostInfo' => 'http://example.com/',
                     'url' => '/base/index.php&r=site%2Fcurrent&id=42'
                 ],
                 'urlManager' => [
-                    'class' => 'yii\web\UrlManager',
+                    '__class' => \yii\web\UrlManager::class,
                     'baseUrl' => '/base',
                     'scriptUrl' => '/base/index.php',
                     'hostInfo' => 'http://example.com/',
