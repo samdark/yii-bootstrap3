@@ -1,8 +1,11 @@
 <p align="center">
+    <a href="https://github.com/yiisoft" target="_blank">
+        <img src="https://avatars0.githubusercontent.com/u/993323" height="80px">
+    </a>
     <a href="http://getbootstrap.com/" target="_blank" rel="external">
         <img src="https://v4-alpha.getbootstrap.com/assets/brand/bootstrap-solid.svg" height="80px">
     </a>
-    <h1 align="center">Twitter Bootstrap 3 Extension for Yii</h1>
+    <h1 align="center">Yii Framework Twitter Bootstrap 3 Extension</h1>
     <br>
 </p>
 
