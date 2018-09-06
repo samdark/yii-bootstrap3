@@ -34,7 +34,7 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
-        "yiisoft/core": "^3.0@dev",
+        "yiisoft/yii-core": "^3.0@dev",
         "yiisoft/yii-jquery": "^1.0",
         "npm-asset/bootstrap": "3.3.* | 3.2.* | 3.1.*"
     },
