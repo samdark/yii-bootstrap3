@@ -14,6 +14,7 @@ Bootstrap のコアは二つの部分によって表されます。
 --------
 
 * [インストール](installation.md)
+* [アセットのセットアップ](assets-setup.md)
 * [基本的な使用方法](basic-usage.md)
 
 使用方法
