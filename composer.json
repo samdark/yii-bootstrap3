@@ -35,7 +35,7 @@
     "prefer-stable": true,
     "require": {
         "yiisoft/yii-core": "^3.0@dev",
-        "yiisoft/yii-jquery": "^1.0",
+        "yiisoft/yii-jquery": "^3.0@dev",
         "npm-asset/bootstrap": "3.3.* | 3.2.* | 3.1.*"
     },
     "require-dev": {
@@ -43,7 +43,9 @@
         "yiisoft/log": "dev-master",
         "yiisoft/cache": "dev-master",
         "yiisoft/yii2-coding-standards": "~2.0",
-        "phpunit/phpunit": "^7.3"
+        "phpunit/phpunit": "^7.3",
+        "yiisoft/yii-web": "^3.0@dev",
+        "hiqdev/composer-config-plugin": "^1.0@dev"
     },
     "repositories": [
         {
