@@ -1,9 +1,9 @@
 <?php
 
-namespace yiiunit\bootstrap;
+namespace yii\bootstrap3\tests;
 
-use yii\bootstrap\Button;
-use yii\bootstrap\ButtonGroup;
+use yii\bootstrap3\Button;
+use yii\bootstrap3\ButtonGroup;
 
 /**
  * @group bootstrap

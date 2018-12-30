@@ -5,9 +5,9 @@
  * @license http://www.yiiframework.com/license/
  */
 
-namespace yii\bootstrap;
+namespace yii\bootstrap3;
 
-use yii\base\InvalidConfigException;
+use yii\exceptions\InvalidConfigException;
 use yii\helpers\ArrayHelper;
 
 /**
@@ -115,7 +115,7 @@ class Collapse extends Widget
     /**
      * Initializes the widget.
      */
-    public function init()
+    public function init(): void
     {
         parent::init();
         Html::addCssClass($this->options, ['widget' => 'panel-group']);

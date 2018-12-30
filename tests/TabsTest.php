@@ -1,9 +1,9 @@
 <?php
 
-namespace yiiunit\bootstrap;
+namespace yii\bootstrap3\tests;
 
-use yii\bootstrap\Tabs;
-use yii\helpers\Html;
+use yii\bootstrap3\Tabs;
+use yii\bootstrap3\Html;
 
 /**
  * Tests for Tabs widget
@@ -172,7 +172,7 @@ class TabsTest extends TestCase
                 ],
                 [
                     'label' => 'Tab 2',
-                    'content' => 'some content'                            
+                    'content' => 'some content'
                 ],
                 [
                     'label' => 'Tab 3',
@@ -183,7 +183,7 @@ class TabsTest extends TestCase
                     'content' => 'some content'
                 ]
             ]
-        ]);        
+        ]);
         $this->assertNotContains('<li class="active"><a href="#mytab-tab0" data-toggle="tab">Tab 1</a></li>', $html);
         $this->assertContains('<li class="active"><a href="#mytab-tab1" data-toggle="tab">Tab 2</a></li>', $html);
     }

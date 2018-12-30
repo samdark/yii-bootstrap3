@@ -5,7 +5,7 @@
  * @license http://www.yiiframework.com/license/
  */
 
-namespace yii\bootstrap;
+namespace yii\bootstrap3;
 
 use yii\base\InvalidConfigException;
 use yii\helpers\ArrayHelper;
@@ -128,13 +128,13 @@ class Tabs extends Widget
      * @var string name of a class to use for rendering dropdowns withing this widget. Defaults to [[Dropdown]].
      * @since 2.0.7
      */
-    public $dropdownClass = 'yii\bootstrap\Dropdown';
+    public $dropdownClass = Dropdown::class;
 
 
     /**
      * Initializes the widget.
      */
-    public function init()
+    public function init(): void
     {
         parent::init();
         Html::addCssClass($this->options, ['widget' => 'nav', $this->navType]);

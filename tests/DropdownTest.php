@@ -1,8 +1,8 @@
 <?php
 
-namespace yiiunit\bootstrap;
+namespace yii\bootstrap3\tests;
 
-use yii\bootstrap\Dropdown;
+use yii\bootstrap3\Dropdown;
 
 /**
  * Tests for Dropdown widget

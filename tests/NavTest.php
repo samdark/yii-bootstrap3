@@ -1,10 +1,10 @@
 <?php
 
-namespace yiiunit\bootstrap;
+namespace yii\bootstrap3\tests;
 
 use yii\base\Action;
 use yii\base\Module;
-use yii\bootstrap\Nav;
+use yii\bootstrap3\Nav;
 use yii\web\Controller;
 
 /**
@@ -16,21 +16,20 @@ class NavTest extends TestCase
 {
     protected function setUp()
     {
-        $this->mockWebApplication([
-            'components' => [
-                'request' => [
-                    '__class' => \yii\web\Request::class,
-                    'scriptUrl' => '/base/index.php',
-                    'hostInfo' => 'http://example.com/',
-                    'url' => '/base/index.php&r=site%2Fcurrent&id=42'
-                ],
-                'urlManager' => [
-                    '__class' => \yii\web\UrlManager::class,
-                    'baseUrl' => '/base',
-                    'scriptUrl' => '/base/index.php',
-                    'hostInfo' => 'http://example.com/',
-                ]
+        $this->mockWebApplication();
+        $this->container->setAll([
+            'request' => [
+                '__class' => \yii\web\Request::class,
+                'scriptUrl' => '/base/index.php',
+                'hostInfo' => 'http://example.com/',
+                'url' => '/base/index.php&r=site%2Fcurrent&id=42'
             ],
+            'urlManager' => [
+                '__class' => \yii\web\UrlManager::class,
+                'baseUrl' => '/base',
+                'scriptUrl' => '/base/index.php',
+                'hostInfo' => 'http://example.com/',
+            ]
         ]);
     }
 
@@ -71,7 +70,7 @@ EXPECTED;
 
         $this->assertEqualsWithoutLE($expected, $out);
     }
-    
+
     public function testRenderDropDownWithDropDownOptions()
     {
         Nav::$counter = 0;
@@ -313,7 +312,7 @@ EXPECTED;
     */
    protected function mockAction($controllerId, $actionID, $moduleID = null, $params = [])
    {
-       \Yii::$app->controller = $controller = new Controller($controllerId, \Yii::$app);
+       $this->app->controller = $controller = new Controller($controllerId, $this->app);
        $controller->actionParams = $params;
        $controller->action = new Action($actionID, $controller);
 
@@ -324,6 +323,6 @@ EXPECTED;
 
    protected function removeMockedAction()
    {
-       \Yii::$app->controller = null;
+       $this->app->controller = null;
    }
 }

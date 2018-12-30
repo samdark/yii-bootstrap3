@@ -5,7 +5,7 @@
  * @license http://www.yiiframework.com/license/
  */
 
-namespace yii\bootstrap;
+namespace yii\bootstrap3;
 
 use yii\base\InvalidConfigException;
 use yii\helpers\ArrayHelper;
@@ -93,7 +93,7 @@ class Progress extends Widget
      * Initializes the widget.
      * If you override this method, make sure you call the parent implementation first.
      */
-    public function init()
+    public function init(): void
     {
         parent::init();
         Html::addCssClass($this->options, ['widget' => 'progress']);

@@ -1,12 +1,12 @@
 <?php
 
-namespace yiiunit\bootstrap;
+namespace yii\bootstrap3\tests;
 
-use yii\bootstrap\NavBar;
+use yii\bootstrap3\NavBar;
 
 /**
  * Tests for NavBar widget
- * 
+ *
  * @group bootstrap
  */
 class NavBarTest extends TestCase

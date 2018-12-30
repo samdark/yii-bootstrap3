@@ -5,9 +5,9 @@
  * @license http://www.yiiframework.com/license/
  */
 
-namespace yii\bootstrap;
+namespace yii\bootstrap3;
 
-use Yii;
+use yii\helpers\Yii;
 use yii\base\InvalidConfigException;
 use yii\helpers\ArrayHelper;
 
@@ -36,7 +36,7 @@ use yii\helpers\ArrayHelper;
  *         [
  *             'label' => 'Login',
  *             'url' => ['site/login'],
- *             'visible' => Yii::$app->user->isGuest
+ *             'visible' => $this->app->user->isGuest
  *         ],
  *     ],
  *     'options' => ['class' =>'nav-pills'], // set this to nav-tab to get tab-styled navigation
@@ -109,20 +109,20 @@ class Nav extends Widget
      * @var string name of a class to use for rendering dropdowns within this widget. Defaults to [[Dropdown]].
      * @since 2.0.7
      */
-    public $dropdownClass = 'yii\bootstrap\Dropdown';
+    public $dropdownClass = Dropdown::class;
 
 
     /**
      * Initializes the widget.
      */
-    public function init()
+    public function init(): void
     {
         parent::init();
-        if ($this->route === null && Yii::$app->controller !== null) {
-            $this->route = Yii::$app->controller->getRoute();
+        if ($this->route === null && $this->app->controller !== null) {
+            $this->route = $this->app->controller->getRoute();
         }
         if ($this->params === null) {
-            $this->params = Yii::$app->request->getQueryParams();
+            $this->params = $this->app->request->getQueryParams();
         }
         if ($this->dropDownCaret === null) {
             $this->dropDownCaret = '<span class="caret"></span>';
@@ -273,8 +273,8 @@ class Nav extends Widget
         }
         if (isset($item['url']) && is_array($item['url']) && isset($item['url'][0])) {
             $route = $item['url'][0];
-            if ($route[0] !== '/' && Yii::$app->controller) {
-                $route = Yii::$app->controller->module->getUniqueId() . '/' . $route;
+            if ($route[0] !== '/' && $this->app->controller) {
+                $route = $this->app->controller->module->getUniqueId() . '/' . $route;
             }
             if (ltrim($route, '/') !== $this->route) {
                 return false;

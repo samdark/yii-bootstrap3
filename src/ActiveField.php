@@ -5,8 +5,10 @@
  * @license http://www.yiiframework.com/license/
  */
 
-namespace yii\bootstrap;
+namespace yii\bootstrap3;
 
+use yii\di\AbstractContainer;
+use yii\di\Initiable;
 use yii\helpers\ArrayHelper;
 
 /**
@@ -48,7 +50,7 @@ use yii\helpers\ArrayHelper;
  * Example:
  *
  * ```php
- * use yii\bootstrap\ActiveForm;
+ * use yii\bootstrap3\ActiveForm;
  *
  * $form = ActiveForm::begin(['layout' => 'horizontal']);
  *
@@ -82,13 +84,13 @@ use yii\helpers\ArrayHelper;
  * ActiveForm::end();
  * ```
  *
- * @see \yii\bootstrap\ActiveForm
+ * @see \yii\bootstrap3\ActiveForm
  * @see http://getbootstrap.com/css/#forms
  *
  * @author Michael Härtl <haertl.mike@gmail.com>
  * @since 2.0
  */
-class ActiveField extends \yii\widgets\ActiveField
+class ActiveField extends \yii\widgets\ActiveField implements Initiable
 {
     /**
      * @var bool whether to render [[checkboxList()]] and [[radioList()]] inline.
@@ -143,16 +145,22 @@ class ActiveField extends \yii\widgets\ActiveField
      * @var bool whether to render the label. Default is `true`.
      */
     public $enableLabel = true;
+    /**
+     * {@inheritdoc}
+     */
+    public $hintOptions = ['tag' => 'p', 'class' => 'help-block'];
+    /**
+     * {@inheritdoc}
+     */
+    public $errorOptions = ['tag' => 'p', 'class' => 'help-block help-block-error'];
 
 
     /**
      * {@inheritdoc}
      */
-    public function __construct($config = [])
+    public function init(): void
     {
-        $layoutConfig = $this->createLayoutConfig($config);
-        $config = ArrayHelper::merge($layoutConfig, $config);
-        parent::__construct($config);
+        AbstractContainer::configure($this, $this->createLayoutConfig());
     }
 
     /**
@@ -349,10 +357,9 @@ class ActiveField extends \yii\widgets\ActiveField
     }
 
     /**
-     * @param array $instanceConfig the configuration passed to this instance's constructor
      * @return array the layout specific default configuration for this instance
      */
-    protected function createLayoutConfig($instanceConfig)
+    protected function createLayoutConfig()
     {
         $config = [
             'hintOptions' => [
@@ -368,7 +375,7 @@ class ActiveField extends \yii\widgets\ActiveField
             ],
         ];
 
-        $layout = $instanceConfig['form']->layout;
+        $layout = $this->form->layout;
 
         if ($layout === 'horizontal') {
             $config['template'] = "{label}\n{beginWrapper}\n{input}\n{error}\n{endWrapper}\n{hint}";
@@ -379,8 +386,8 @@ class ActiveField extends \yii\widgets\ActiveField
                 'error' => '',
                 'hint' => 'col-sm-3',
             ], $this->horizontalCssClasses);
-            if (isset($instanceConfig['horizontalCssClasses'])) {
-                $cssClasses = ArrayHelper::merge($cssClasses, $instanceConfig['horizontalCssClasses']);
+            if (isset($this->horizontalCssClasses)) {
+                $cssClasses = ArrayHelper::merge($cssClasses, $this->horizontalCssClasses);
             }
             $config['horizontalCssClasses'] = $cssClasses;
             $config['wrapperOptions'] = ['class' => $cssClasses['wrapper']];

@@ -1,12 +1,12 @@
 <?php
 
-namespace yiiunit\bootstrap;
+namespace yii\bootstrap3\tests;
 
-use yii\bootstrap\ActiveForm;
+use yii\bootstrap3\ActiveForm;
 
 /**
  * Tests for ActiveForm widget
- * 
+ *
  * @group bootstrap
  */
 class ActiveFormTest extends TestCase

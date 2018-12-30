@@ -5,7 +5,7 @@
  * @license http://www.yiiframework.com/license/
  */
 
-namespace yii\bootstrap;
+namespace yii\bootstrap3;
 
 use Yii;
 use yii\helpers\ArrayHelper;
@@ -103,7 +103,7 @@ class Modal extends Widget
     /**
      * Initializes the widget.
      */
-    public function init()
+    public function init(): void
     {
         parent::init();
 

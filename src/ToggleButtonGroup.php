@@ -5,18 +5,18 @@
  * @license http://www.yiiframework.com/license/
  */
 
-namespace yii\bootstrap;
+namespace yii\bootstrap3;
 
 use yii\base\InvalidConfigException;
 
 /**
  * ToggleButtonGroup allows rendering form inputs Checkbox/Radio toggle button groups.
  *
- * You can use this widget in an [[yii\bootstrap\ActiveForm|ActiveForm]] using the [[yii\widgets\ActiveField::widget()|widget()]]
+ * You can use this widget in an [[yii\bootstrap3\ActiveForm|ActiveForm]] using the [[yii\widgets\ActiveField::widget()|widget()]]
  * method, for example like this:
  *
  * ```php
- * <?= $form->field($model, 'item_id')->widget(\yii\bootstrap\ToggleButtonGroup::class, [
+ * <?= $form->field($model, 'item_id')->widget(\yii\bootstrap3\ToggleButtonGroup::class, [
  *     // configure additional widget properties here
  * ]) ?>
  * ```
@@ -54,7 +54,7 @@ class ToggleButtonGroup extends InputWidget
     /**
      * {@inheritdoc}
      */
-    public function init()
+    public function init(): void
     {
         parent::init();
         $this->registerPlugin('button');
@@ -79,9 +79,9 @@ class ToggleButtonGroup extends InputWidget
                 }
             case 'radio':
                 if ($this->hasModel()) {
-                    return Html::activeRadioList($this->model, $this->attribute, $this->items, $this->options); 
+                    return Html::activeRadioList($this->model, $this->attribute, $this->items, $this->options);
                 } else {
-                    return Html::radioList($this->name, $this->value, $this->items, $this->options); 
+                    return Html::radioList($this->name, $this->value, $this->items, $this->options);
                 }
             default:
                 throw new InvalidConfigException("Unsupported type '{$this->type}'");

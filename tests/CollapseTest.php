@@ -1,9 +1,9 @@
 <?php
 
-namespace yiiunit\bootstrap;
+namespace yii\bootstrap3\tests;
 
 use yii\base\DynamicModel;
-use yii\bootstrap\Collapse;
+use yii\bootstrap3\Collapse;
 use yii\widgets\ActiveForm;
 
 /**
@@ -171,7 +171,7 @@ HTML
 
     /**
      * @dataProvider invalidItemsProvider
-     * @expectedException \yii\base\InvalidConfigException
+     * @expectedException \yii\exceptions\InvalidConfigException
      */
     public function testMissingLabel($items)
     {

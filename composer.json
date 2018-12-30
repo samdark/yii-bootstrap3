@@ -42,7 +42,7 @@
         "yiisoft/di": "dev-master",
         "yiisoft/log": "dev-master",
         "yiisoft/cache": "dev-master",
-        "yiisoft/yii2-coding-standards": "~2.0",
+        "foxy/foxy": "^1.0",
         "phpunit/phpunit": "^7.3",
         "yiisoft/yii-web": "^3.0@dev",
         "hiqdev/composer-config-plugin": "^1.0@dev"
@@ -55,17 +55,20 @@
     ],
     "autoload": {
         "psr-4": {
-            "yii\\bootstrap\\": "src"
+            "yii\\bootstrap3\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "yiiunit\\bootstrap\\": "tests"
+            "yii\\bootstrap3\\tests\\": "tests"
         }
     },
     "extra": {
         "branch-alias": {
-            "dev-master": "1.0.x-dev"
-        }
+            "dev-master": "3.0.x-dev"
+        },
+	"config-plugin": {
+	    "tests": "config/tests.php"
+	}
     }
 }

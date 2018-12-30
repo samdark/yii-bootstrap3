@@ -1,8 +1,8 @@
 <?php
 
-namespace yiiunit\bootstrap;
+namespace yii\bootstrap3\tests;
 
-use yii\bootstrap\Modal;
+use yii\bootstrap3\Modal;
 
 /**
  * @group bootstrap
