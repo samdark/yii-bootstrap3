@@ -36,7 +36,7 @@
     "require": {
         "yiisoft/yii-core": "^3.0@dev",
         "yiisoft/yii-jquery": "^3.0@dev",
-        "npm-asset/bootstrap": "3.3.* | 3.2.* | 3.1.*"
+        "npm-asset/bootstrap": "3.4.* | 3.3.* | 3.2.* | 3.1.*"
     },
     "require-dev": {
         "yiisoft/di": "dev-master",
