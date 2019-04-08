@@ -34,25 +34,21 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
-        "yiisoft/yii-core": "^3.0@dev",
-        "yiisoft/yii-jquery": "^3.0@dev",
-        "npm-asset/bootstrap": "3.4.* | 3.3.* | 3.2.* | 3.1.*"
+        "yiisoft/yii-core": "^3.0@dev"
     },
     "require-dev": {
-        "yiisoft/di": "dev-master",
-        "yiisoft/log": "dev-master",
-        "yiisoft/cache": "dev-master",
         "foxy/foxy": "^1.0",
-        "phpunit/phpunit": "^7.3",
+        "yiisoft/di": "^3.0@dev",
+        "yiisoft/log": "^3.0@dev",
+        "yiisoft/cache": "^3.0@dev",
         "yiisoft/yii-web": "^3.0@dev",
-        "hiqdev/composer-config-plugin": "^1.0@dev"
+        "yiisoft/yii-jquery": "^3.0@dev",
+        "hiqdev/composer-config-plugin": "^1.0@dev",
+        "phpunit/phpunit": "^7.3"
     },
-    "repositories": [
-        {
-            "type": "composer",
-            "url": "https://asset-packagist.org"
-        }
-    ],
+    "provide": {
+        "yiisoft/yii-bootstrap-implementation": "3.0.0"
+    },
     "autoload": {
         "psr-4": {
             "yii\\bootstrap3\\": "src"
@@ -67,8 +63,8 @@
         "branch-alias": {
             "dev-master": "3.0.x-dev"
         },
-	"config-plugin": {
-	    "tests": "config/tests.php"
-	}
+        "config-plugin": {
+            "tests": "config/tests.php"
+        }
     }
 }
