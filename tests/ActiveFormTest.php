@@ -11,14 +11,12 @@ use yii\bootstrap3\ActiveForm;
  */
 class ActiveFormTest extends TestCase
 {
-
     protected function setUp()
     {
         // dirty way to have Request object not throwing exception when running testFormNoRoleAttribute()
         $_SERVER['REQUEST_URI'] = "index.php";
 
         parent::setUp();
-
     }
 
     /**

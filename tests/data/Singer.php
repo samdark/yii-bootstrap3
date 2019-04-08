@@ -21,7 +21,9 @@ class Singer extends Model
             [['lastName'], 'default', 'value' => 'Lennon'],
             [['lastName'], 'required'],
             [['underscore_style'], 'string'],
-            [['test'], 'required', 'when' => function($model) { return $model->firstName === 'cebe'; }],
+            [['test'], 'required', 'when' => function ($model) {
+                return $model->firstName === 'cebe';
+            }],
         ];
     }
 }

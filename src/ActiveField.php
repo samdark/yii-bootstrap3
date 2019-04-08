@@ -294,7 +294,7 @@ class ActiveField extends \yii\widgets\ActiveField implements Initiable
                     'labelOptions' => ['class' => 'radio-inline'],
                 ];
             }
-        }  elseif (!isset($options['item'])) {
+        } elseif (!isset($options['item'])) {
             $itemOptions = isset($options['itemOptions']) ? $options['itemOptions'] : [];
             $encode = ArrayHelper::getValue($options, 'encode', true);
             $options['item'] = function ($index, $label, $name, $checked, $value) use ($itemOptions, $encode) {

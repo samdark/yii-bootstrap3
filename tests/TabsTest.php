@@ -78,8 +78,8 @@ class TabsTest extends TestCase
             "id=\"$page3\"",
             "id=\"$page4\"",
             "id=\"$page5\"",
-            Html::a($extAnchor1,$extUrl1),
-            Html::a($extAnchor2,$extUrl2, ['tabindex' => -1]),
+            Html::a($extAnchor1, $extUrl1),
+            Html::a($extAnchor2, $extUrl2, ['tabindex' => -1]),
         ];
 
         foreach ($shouldContain as $string) {

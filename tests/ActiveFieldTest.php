@@ -112,5 +112,4 @@ HTML;
 
         $this->assertContains('data-attribute="test"', $content);
     }
-
 }
