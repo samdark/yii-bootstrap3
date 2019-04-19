@@ -9,7 +9,7 @@ namespace yii\bootstrap3;
 
 use yii\di\AbstractContainer;
 use yii\di\Initiable;
-use yii\helpers\ArrayHelper;
+use Yii\Helpers\ArrayHelper;
 
 /**
  * A Bootstrap 3 enhanced version of [[\yii\widgets\ActiveField]].

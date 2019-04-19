@@ -8,7 +8,7 @@
 namespace yii\bootstrap3;
 
 use yii\exceptions\InvalidConfigException;
-use yii\helpers\ArrayHelper;
+use Yii\Helpers\ArrayHelper;
 
 /**
  * Dropdown renders a Bootstrap dropdown menu component.

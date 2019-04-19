@@ -7,7 +7,7 @@
 
 namespace yii\bootstrap3;
 
-use yii\helpers\ArrayHelper;
+use Yii\Helpers\ArrayHelper;
 use yii\helpers\Url;
 
 /**
