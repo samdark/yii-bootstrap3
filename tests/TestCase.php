@@ -3,7 +3,7 @@
 namespace yii\bootstrap3\tests;
 
 use yii\di\Container;
-use yii\helpers\ArrayHelper;
+use Yiisoft\Arrays\ArrayHelper;
 use yii\helpers\Yii;
 
 /**

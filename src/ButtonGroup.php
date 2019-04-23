@@ -7,7 +7,7 @@
 
 namespace yii\bootstrap3;
 
-use Yii\Helpers\ArrayHelper;
+use Yiisoft\Arrays\ArrayHelper;
 
 /**
  * ButtonGroup renders a button group bootstrap component.

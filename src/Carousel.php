@@ -8,7 +8,7 @@
 namespace yii\bootstrap3;
 
 use yii\exceptions\InvalidConfigException;
-use Yii\Helpers\ArrayHelper;
+use Yiisoft\Arrays\ArrayHelper;
 
 /**
  * Carousel renders a carousel bootstrap javascript component.

@@ -8,7 +8,7 @@
 namespace yii\bootstrap3;
 
 use Yii;
-use Yii\Helpers\ArrayHelper;
+use Yiisoft\Arrays\ArrayHelper;
 
 /**
  * NavBar renders a navbar HTML component.
