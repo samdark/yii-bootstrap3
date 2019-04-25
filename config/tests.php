@@ -4,9 +4,9 @@ return [
     'app' => [
         'id' => 'testapp',
         'aliases' => [
-            '@webroot' => '@yii/bootstrap3/tests',
-            '@public'  => '@yii/bootstrap3/tests',
-            '@web'     => '@yii/bootstrap3/tests',
+            '@webroot' => '@Yiisoft/Yii/Bootstrap3/Tests',
+            '@public'  => '@Yiisoft/Yii/Bootstrap3/Tests',
+            '@web'     => '@Yiisoft/Yii/Bootstrap3/Tests',
             '@bower'   => '@vendor/bower-asset',
             '@npm'     => '@vendor/npm-asset',
         ],

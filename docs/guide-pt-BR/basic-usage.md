@@ -9,7 +9,7 @@ diretório `@app/assets`:
 ```php
 public $depends = [
     'yii\web\YiiAsset',
-    'yii\bootstrap\BootstrapAsset', // this line
+    'Yiisoft\Yii\Bootstrap3\BootstrapAsset', // this line
 ];
 ```
 

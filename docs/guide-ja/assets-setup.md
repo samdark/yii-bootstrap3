@@ -103,21 +103,21 @@ return [
         'assetManager' => [
             // バンドルをオーバーライドして CDN を使う
             'bundles' => [
-                yii\bootstrap\BootstrapAsset::class => [
+                Yiisoft\Yii\Bootstrap3\BootstrapAsset::class => [
                     'sourcePath' => null,
                     'baseUrl' => 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7',
                     'css' => [
                         'css/bootstrap.min.css'
                     ],
                 ],
-                yii\bootstrap\BootstrapPluginAsset::class => [
+                Yiisoft\Yii\Bootstrap3\BootstrapPluginAsset::class => [
                     'sourcePath' => null,
                     'baseUrl' => 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7',
                     'js' => [
                         'js/bootstrap.min.js'
                     ],
                 ],
-                yii\bootstrap\BootstrapThemeAsset::class => [
+                Yiisoft\Yii\Bootstrap3\BootstrapThemeAsset::class => [
                     'sourcePath' => null,
                     'baseUrl' => 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7',
                     'css' => [
@@ -164,16 +164,16 @@ return [
             ],
             // バンドルをオーバーライドし、ローカル・プロジェクト・ファイルを使う
             'bundles' => [
-                yii\bootstrap\BootstrapAsset::class => [
+                Yiisoft\Yii\Bootstrap3\BootstrapAsset::class => [
                     'sourcePath' => '@app/assets/source/bootstrap',
                     'css' => [
                         'css/bootstrap.less'
                     ],
                 ],
-                yii\bootstrap\BootstrapPluginAsset::class => [
+                Yiisoft\Yii\Bootstrap3\BootstrapPluginAsset::class => [
                     'sourcePath' => '@app/assets/source/bootstrap',
                 ],
-                yii\bootstrap\BootstrapThemeAsset::class => [
+                Yiisoft\Yii\Bootstrap3\BootstrapThemeAsset::class => [
                     'sourcePath' => '@app/assets/source/bootstrap',
                 ],
             ],
@@ -218,16 +218,16 @@ return [
             ],
             // バンドルをオーバーライドし、ローカル・プロジェクト・ファイルを使う
             'bundles' => [
-                yii\bootstrap\BootstrapAsset::class => [
+                Yiisoft\Yii\Bootstrap3\BootstrapAsset::class => [
                     'sourcePath' => '@app/assets/source/bootstrap',
                     'css' => [
                         'css/bootstrap.scss'
                     ],
                 ],
-                yii\bootstrap\BootstrapPluginAsset::class => [
+                Yiisoft\Yii\Bootstrap3\BootstrapPluginAsset::class => [
                     'sourcePath' => '@app/assets/source/bootstrap',
                 ],
-                yii\bootstrap\BootstrapThemeAsset::class => [
+                Yiisoft\Yii\Bootstrap3\BootstrapThemeAsset::class => [
                     'sourcePath' => '@app/assets/source/bootstrap',
                 ],
             ],

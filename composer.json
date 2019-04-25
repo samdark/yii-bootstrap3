@@ -52,12 +52,12 @@
     },
     "autoload": {
         "psr-4": {
-            "yii\\bootstrap3\\": "src"
+            "Yiisoft\\Yii\\Bootstrap3\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "yii\\bootstrap3\\tests\\": "tests"
+            "Yiisoft\\Yii\\Bootstrap3\\Tests\\": "tests"
         }
     },
     "extra": {

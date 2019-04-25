@@ -1,9 +1,9 @@
 <?php
 
-namespace yii\bootstrap3\tests;
+namespace Yiisoft\Yii\Bootstrap3\Tests;
 
 use yii\base\Model;
-use yii\bootstrap3\ToggleButtonGroup;
+use Yiisoft\Yii\Bootstrap3\ToggleButtonGroup;
 
 /**
  * @group bootstrap

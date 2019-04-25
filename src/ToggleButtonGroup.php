@@ -5,18 +5,18 @@
  * @license http://www.yiiframework.com/license/
  */
 
-namespace yii\bootstrap3;
+namespace Yiisoft\Yii\Bootstrap3;
 
 use yii\base\InvalidConfigException;
 
 /**
  * ToggleButtonGroup allows rendering form inputs Checkbox/Radio toggle button groups.
  *
- * You can use this widget in an [[yii\bootstrap3\ActiveForm|ActiveForm]] using the [[yii\widgets\ActiveField::widget()|widget()]]
+ * You can use this widget in an [[Yiisoft\Yii\Bootstrap3\ActiveForm|ActiveForm]] using the [[yii\widgets\ActiveField::widget()|widget()]]
  * method, for example like this:
  *
  * ```php
- * <?= $form->field($model, 'item_id')->widget(\yii\bootstrap3\ToggleButtonGroup::class, [
+ * <?= $form->field($model, 'item_id')->widget(\Yiisoft\Yii\Bootstrap3\ToggleButtonGroup::class, [
  *     // configure additional widget properties here
  * ]) ?>
  * ```

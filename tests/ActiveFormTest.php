@@ -1,8 +1,8 @@
 <?php
 
-namespace yii\bootstrap3\tests;
+namespace Yiisoft\Yii\Bootstrap3\Tests;
 
-use yii\bootstrap3\ActiveForm;
+use Yiisoft\Yii\Bootstrap3\ActiveForm;
 
 /**
  * Tests for ActiveForm widget

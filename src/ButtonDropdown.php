@@ -5,7 +5,7 @@
  * @license http://www.yiiframework.com/license/
  */
 
-namespace yii\bootstrap3;
+namespace Yiisoft\Yii\Bootstrap3;
 
 use Yiisoft\Arrays\ArrayHelper;
 use yii\helpers\Url;

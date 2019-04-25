@@ -5,10 +5,10 @@ Bootstrap это комплексное front-end решение, включаю
 Для того чтобы обеспечить вам самый гибкий контроль над компонентами Bootstrap, это расширение предоставляет несколькоо asset bundles.
 Вот они:
 
-- [[yii\bootstrap\BootstrapAsset|BootstrapAsset]] - содержит CSS файлы.
-- [[yii\bootstrap\BootstrapPluginAsset|BootstrapPluginAsset]] - зависит от [[yii\bootstrap\BootstrapAsset]], содержащий javascript файлы.
-- [[yii\bootstrap\BootstrapThemeAsset|BootstrapThemeAsset]] - зависит от [[yii\bootstrap\BootstrapAsset]], содержащий Bootstrap CSS темы по умолчанию.
+- [[Yiisoft\Yii\Bootstrap3\BootstrapAsset|BootstrapAsset]] - содержит CSS файлы.
+- [[Yiisoft\Yii\Bootstrap3\BootstrapPluginAsset|BootstrapPluginAsset]] - зависит от [[Yiisoft\Yii\Bootstrap3\BootstrapAsset]], содержащий javascript файлы.
+- [[Yiisoft\Yii\Bootstrap3\BootstrapThemeAsset|BootstrapThemeAsset]] - зависит от [[Yiisoft\Yii\Bootstrap3\BootstrapAsset]], содержащий Bootstrap CSS темы по умолчанию.
 
-Конкретные приложения могут потребовать различного использования. Если вам нужны только CSS стили, то [[yii\bootstrap\BootstrapAsset]] будет достаточным для вас. Тем не менее, если вы хотите использовать Bootstrap JavaScript, вам необходимо зарегистрировать [[yii\bootstrap\BootstrapPluginAsset]].
+Конкретные приложения могут потребовать различного использования. Если вам нужны только CSS стили, то [[Yiisoft\Yii\Bootstrap3\BootstrapAsset]] будет достаточным для вас. Тем не менее, если вы хотите использовать Bootstrap JavaScript, вам необходимо зарегистрировать [[Yiisoft\Yii\Bootstrap3\BootstrapPluginAsset]].
 
-> Tip: большинство виджетов регистрируются [[yii\bootstrap\BootstrapPluginAsset]] автоматически.
+> Tip: большинство виджетов регистрируются [[Yiisoft\Yii\Bootstrap3\BootstrapPluginAsset]] автоматически.

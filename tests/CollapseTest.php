@@ -1,9 +1,9 @@
 <?php
 
-namespace yii\bootstrap3\tests;
+namespace Yiisoft\Yii\Bootstrap3\Tests;
 
 use yii\base\DynamicModel;
-use yii\bootstrap3\Collapse;
+use Yiisoft\Yii\Bootstrap3\Collapse;
 use yii\widgets\ActiveForm;
 
 /**
@@ -190,7 +190,7 @@ HTML
         $form = ActiveForm::begin(['action' => '/something']);
         ActiveForm::end();
         ob_end_clean();
-        $model = new data\Singer;
+        $model = new Data\Singer;
 
         Collapse::$counter = 0;
         $output = Collapse::widget([

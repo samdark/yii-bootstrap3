@@ -10,7 +10,7 @@ do seguinte modo:
 ```php
     'assetManager' => [
         'bundles' => [
-            'yii\bootstrap\BootstrapAsset' => [
+            'Yiisoft\Yii\Bootstrap3\BootstrapAsset' => [
                 'css' => [],
             ]
         ]

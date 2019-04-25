@@ -1,6 +1,6 @@
 <?php
 
-namespace yii\bootstrap3\tests;
+namespace Yiisoft\Yii\Bootstrap3\Tests;
 
 use yii\di\Container;
 use Yiisoft\Arrays\ArrayHelper;

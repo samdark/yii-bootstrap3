@@ -1,12 +1,12 @@
 <?php
 
-namespace yii\bootstrap3\tests;
+namespace Yiisoft\Yii\Bootstrap3\Tests;
 
 use yii\base\DynamicModel;
-use yii\bootstrap3\ActiveField;
-use yii\bootstrap3\ActiveForm;
+use Yiisoft\Yii\Bootstrap3\ActiveField;
+use Yiisoft\Yii\Bootstrap3\ActiveForm;
 use yii\helpers\Yii;
-use yii\bootstrap3\tests\data\ExtendedActiveField;
+use Yiisoft\Yii\Bootstrap3\Tests\Data\ExtendedActiveField;
 
 class ActiveFieldTest extends TestCase
 {

@@ -5,7 +5,7 @@
  * @license http://www.yiiframework.com/license/
  */
 
-namespace yii\bootstrap3;
+namespace Yiisoft\Yii\Bootstrap3;
 
 use Yii;
 use yii\base\InvalidConfigException;
@@ -17,7 +17,7 @@ use yii\base\InvalidConfigException;
  * So for example to render a horizontal form you would:
  *
  * ```php
- * use yii\bootstrap3\ActiveForm;
+ * use Yiisoft\Yii\Bootstrap3\ActiveForm;
  *
  * $form = ActiveForm::begin(['layout' => 'horizontal'])
  * ```
@@ -78,7 +78,7 @@ class ActiveForm extends \yii\widgets\ActiveForm
      * By choosing a layout, an appropriate default field configuration is applied. This will
      * render the form fields with slightly different markup for each layout. You can
      * override these defaults through [[fieldConfig]].
-     * @see \yii\bootstrap3\ActiveField for details on Bootstrap 3 field configuration
+     * @see \Yiisoft\Yii\Bootstrap3\ActiveField for details on Bootstrap 3 field configuration
      */
     public $layout = 'default';
 
