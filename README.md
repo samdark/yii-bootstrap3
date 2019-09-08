@@ -9,6 +9,8 @@
     <br>
 </p>
 
+> Warning: This package is not maintained. Please use `yiisoft/bootstrap4`.
+
 This is the Twitter Bootstrap extension for [Yii framework](http://www.yiiframework.com).
 It encapsulates [Bootstrap](http://getbootstrap.com/) components
 and plugins in terms of Yii widgets, and thus makes using Bootstrap components/plugins
